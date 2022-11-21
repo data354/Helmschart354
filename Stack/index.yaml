@@ -1,15 +1,24 @@
 apiVersion: v1
 entries:
+  modernstack:
+  - apiVersion: v2
+    created: "2022-11-21T17:16:27.551947875Z"
+    description: A Helm chart for Kubernetes
+    name: modernstack
+    type: application
+    urls:
+    - https://data354.github.io/Helmschart354/Stack/modernstack-0.1.0.tgz
+    version: 0.1.0
   Postgres354:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-11-21T16:32:46.40254861Z"
+    created: "2022-11-21T17:16:27.551947875Z"
     description: A Helm chart for Kubernetes
     digest: 34501c179af817c8a1158705f296730177d6ae476321881bafb244786b366f2e
     name: Postgres354
     type: application
     urls:
-    - https://data354.github.io/Helmschart354/stack/charts/Postgres354-0.1.0.tgz
+    - https://data354.github.io/Helmschart354/Stack/charts/Postgres354-0.1.0.tgz
     version: 0.1.0
   airflow:
   - annotations:
@@ -224,7 +233,7 @@ entries:
           url: https://airflow.apache.org/docs/apache-airflow/2.4.1/_images/context.png
     apiVersion: v2
     appVersion: 2.4.1
-    created: "2022-11-21T16:32:46.414142212Z"
+    created: "2022-11-21T17:16:27.563411045Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -248,6 +257,6 @@ entries:
     - https://github.com/apache/airflow
     type: application
     urls:
-    - https://data354.github.io/Helmschart354/stack/charts/airflow-1.7.0.tgz
+    - https://data354.github.io/Helmschart354/Stack/charts/airflow-1.7.0.tgz
     version: 1.7.0
-generated: "2022-11-21T16:32:46.400870683Z"
+generated: "2022-11-21T17:16:27.550897511Z"
