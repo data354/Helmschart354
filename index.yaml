@@ -10,5 +10,6 @@ entries:
     type: application
     urls:
     - https://data354.github.io/Helmschart354/postgreschart/Postgres354-0.1.0.tgz
+    - https://data354.github.io/Helmschart354/postgreschart/Postgres354-0.1.1.tgz
     version: 0.1.0
 generated: "2022-11-14T18:31:12.830669687Z"
