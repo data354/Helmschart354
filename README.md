@@ -5,4 +5,4 @@
      - URL : https://data354.github.io/Helmschart354/Stack/
 
 - PORTS MAPPING 
-    30000   ------------------------------ AIRFLOW UI
+    - 30000   ------------------------------ AIRFLOW UI
