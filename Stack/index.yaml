@@ -3,9 +3,9 @@ entries:
   Postgres354:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-11-21T17:47:16.650332878Z"
+    created: "2022-11-28T15:19:28.48475082Z"
     description: A Helm chart for Kubernetes
-    digest: 34501c179af817c8a1158705f296730177d6ae476321881bafb244786b366f2e
+    digest: 91ec7982ea0c79f2e2e5cb86ca50207820ce7449e26777a0360c2b32b76af25f
     name: Postgres354
     type: application
     urls:
@@ -224,7 +224,7 @@ entries:
           url: https://airflow.apache.org/docs/apache-airflow/2.4.1/_images/context.png
     apiVersion: v2
     appVersion: 2.4.1
-    created: "2022-11-21T17:47:16.660133317Z"
+    created: "2022-11-28T15:19:28.494655167Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -250,6 +250,29 @@ entries:
     urls:
     - https://data354.github.io/Helmschart354/Stack/charts/airflow-1.7.0.tgz
     version: 1.7.0
+  minio:
+  - apiVersion: v1
+    appVersion: RELEASE.2022-11-11T03-44-20Z
+    created: "2022-11-28T15:19:28.496115918Z"
+    description: Multi-Cloud Object Storage
+    digest: 3e952c5d737980b8ccdfb819021eafb4b4e8da226f764a1dc3de1ba63ceb1ffa
+    home: https://min.io
+    icon: https://min.io/resources/img/logo/MINIO_wordmark.png
+    keywords:
+    - minio
+    - storage
+    - object-storage
+    - s3
+    - cluster
+    maintainers:
+    - email: dev@minio.io
+      name: MinIO, Inc
+    name: minio
+    sources:
+    - https://github.com/minio/minio
+    urls:
+    - https://data354.github.io/Helmschart354/Stack/charts/minio-5.0.1.tgz
+    version: 5.0.1
   modernstack:
   - apiVersion: v2
     appVersion: 1.16.0
@@ -273,6 +296,6 @@ entries:
     name: modernstack
     type: application
     urls:
-    - https://data354.github.io/Helmschart354/Stack/modernstack-0.1.0.tgz
-    version: 0.1.0
-generated: "2022-11-21T17:47:16.63498447Z"
+    - https://data354.github.io/Helmschart354/Stack/modernstack-0.2.0.tgz
+    version: 0.2.0
+generated: "2022-11-28T15:19:28.483975755Z"
