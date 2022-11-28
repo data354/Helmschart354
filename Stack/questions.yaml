@@ -1,0 +1,141 @@
+rancher_min_version: 2.6.9
+questions:
+- variable: postgres.enabled
+  label: enabled postgres
+  description: add or not postgresql into the stack
+  type: boolean
+  required: false
+  default: false
+  group: postgresql
+  show_subquestion_if: true
+  subquestions:
+    - variable: postgres.configmap.database
+      label: Database
+      description: default db to create 
+      default: "default-db"
+    - variable: postgres.configmap.user
+      label: User
+      description: default user to create 
+      default: "default-user"
+    - variable: postgres.configmap.password
+      label: Password
+      description: default user to create 
+      default: "default-pwd"
+    - variable: postgres.image.repository
+      label: Image repository
+      description: postgres image to use 
+      default: "postgres:14-alpine"
+    - variable: postgres.image.pullPolicy
+      label: Pull Policy
+      description: postgres image pull policy 
+      default: "IfNotPresent"
+    - variable: postgres.service.type
+      label: Service
+      description: postgres image pull policy 
+      type: enum
+      options: 
+      - "ClusterIP"
+      - "NodePort"
+      - "LoadBalancer"
+      default: "ClusterIP"
+    - variable: postgres.resource.limits.cpu
+      label: CPU limit
+      description: limit of CPU
+    - variable: postgres.resource.limits.memory
+      label: memory limit
+      description: limit of memory
+    - variable: postgres.resource.requests.cpu
+      label: CPU request
+      description: request of CPU
+    - variable: postgres.resource.requests.memory
+      label: memory request
+      description: request of memory
+     
+- variable: airflow.enabled
+  label: enabled airflow
+  description: add or not airflow into the stack
+  type: boolean
+  required: false
+  default: false
+  group: airflow
+  show_subquestion_if: true
+  subquestions:
+    - variable: airflow.dags.gitSync.enabled
+      label: Enabled git
+      description: active git synchronization
+      type: boolean
+      default: false
+    - variable: airflow.dags.gitSync.branch
+      label: Git branch
+      description: git branch for dags
+      required: true
+      show_if: "airflow.dags.gitSync.enabled=true"
+    - variable: airflow.dags.gitSync.repo
+      label: Git repo
+      description: git repo for dags
+      required: true
+      show_if: "airflow.dags.gitSync.enabled=true"
+    - variable: airflow.dags.gitSync.sshKeySecret
+      label: sshKeySecret
+      description: existant synchronization ssh key secret
+      required: true
+      show_if: "airflow.dags.gitSync.enabled=true"
+    - variable: airflow.dags.gitSync.subPath
+      label: subPath
+      description: repo sub path
+      required: true
+      show_if: "airflow.dags.gitSync.enabled=true"
+    - variable: airflow.images.airflow.repository
+      label: Airflow image repo
+      required: true
+    - variable: airflow.images.airflow.tag
+      label: Airflow image tag
+      required: true
+    - variable: airflow.images.airflow.pullPolicy
+      label: Airflow image pull policy
+      required: true
+      default: "IfNotPresent"
+- variable: minio.enabled
+  label: enabled minio
+  description: add or not minio into the stack
+  type: boolean
+  required: false
+  default: false
+  group: minio
+  show_subquestion_if: "true"
+  subquestions:
+    - variable: minio.rootUser
+      label: Minio root user
+      description: root user 
+      required: true
+    - variable: minio.rootPassword
+      label: Minio root password
+      description: root password 
+      required: true
+    - variable: minio.replicas
+      label: Minio replicas 
+      type: int
+      required: true
+      default: 3
+    - variable: minio.persistence.size
+      label: Minio volume size 
+      required: true
+      default: 100Gi
+    - variable: minio.consoleService.type
+      label: Minio console service type 
+      type: enum
+      options: 
+      - "ClusterIP"
+      - "NodePort"
+      - "LoadBalancer"
+      default: "NodePort"
+      required: true
+    - variable: minio.consoleService.nodePort
+      label: Minio console service node port
+      required: true
+      default: 30001
+      type: int
+    
+    
+  
+
