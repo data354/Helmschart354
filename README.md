@@ -8,6 +8,7 @@
     - 30000   ------------------------------  AIRFLOW UI
     - 30001   ------------------------------- MINIO CONSOLE
     - 30002   ------------------------------- Postgresql
+    - 30003   -------------------------------- Trino
     
 - INSTALL
     - helm repo add stack https://data354.github.io/Helmschart354/Stack/
