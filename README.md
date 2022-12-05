@@ -1,13 +1,14 @@
 # Helmschart354
 - Version 
      - Numero : 0.1.0
-     - Content : Postgresql + airflow + Spark
+     - Content : Postgresql + airflow + Spark(mode cluster) + Minio + HiveMetastore + Trino
      - URL : https://data354.github.io/Helmschart354/Stack/
 
 - PORTS MAPPING 
     - 30000   ------------------------------  AIRFLOW UI
     - 30001   ------------------------------- MINIO CONSOLE
     - 30002   ------------------------------- Postgresql
+    - 30003   -------------------------------- Trino
     
 - INSTALL
     - helm repo add stack https://data354.github.io/Helmschart354/Stack/
