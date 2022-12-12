@@ -28,6 +28,6 @@ entries:
     name: Postgres354
     type: application
     urls:
-    - charts/Postgres354-0.1.0.tgz
+    - https://data354.github.io/Helmschart354/HiveMetastore/charts/Postgres354-0.1.0.tgz
     version: 0.1.0
 generated: "2022-12-12T09:29:47.153119901Z"
