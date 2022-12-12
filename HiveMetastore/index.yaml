@@ -17,7 +17,7 @@ entries:
     name: HiveMetastore
     type: application
     urls:
-    - https://data354.github.io/Helmschart354/HiveMetastore
+    - https://data354.github.io/Helmschart354/HiveMetastore/HiveMetastore-0.1.0.tgz
     version: 0.1.0
   Postgres354:
   - apiVersion: v2
@@ -28,6 +28,6 @@ entries:
     name: Postgres354
     type: application
     urls:
-    - charts/Postgres354-0.1.0.tgz
+    - https://data354.github.io/Helmschart354/HiveMetastore/charts/Postgres354-0.1.0.tgz
     version: 0.1.0
 generated: "2022-12-12T09:29:47.153119901Z"
