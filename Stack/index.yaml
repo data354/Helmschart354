@@ -3,7 +3,7 @@ entries:
   Postgres354:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-12-13T11:06:04.017406117Z"
+    created: "2022-12-15T17:00:24.407624515Z"
     description: A Helm chart for Kubernetes
     digest: 623df300ef0a9a75707dd646a9fb1f3f38de944d1e668ea9cb67919b69c864bb
     name: Postgres354
@@ -14,7 +14,7 @@ entries:
   Trino:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-12-13T11:06:04.019930014Z"
+    created: "2022-12-15T17:00:24.409730975Z"
     dependencies:
     - alias: Hive
       name: HiveMetastore
@@ -242,7 +242,7 @@ entries:
           url: https://airflow.apache.org/docs/apache-airflow/2.4.1/_images/context.png
     apiVersion: v2
     appVersion: 2.4.1
-    created: "2022-12-13T11:06:04.031598519Z"
+    created: "2022-12-15T17:00:24.420836544Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -271,7 +271,7 @@ entries:
   minio:
   - apiVersion: v1
     appVersion: RELEASE.2022-11-11T03-44-20Z
-    created: "2022-12-13T11:06:04.033455356Z"
+    created: "2022-12-15T17:00:24.422154708Z"
     description: Multi-Cloud Object Storage
     digest: 3e952c5d737980b8ccdfb819021eafb4b4e8da226f764a1dc3de1ba63ceb1ffa
     home: https://min.io
@@ -294,30 +294,31 @@ entries:
   modernstack:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-12-13T11:06:04.016902351Z"
+    created: "2022-12-15T17:00:24.407062105Z"
     dependencies:
-    - condition: Airflow.enabled
+    - condition: airflow.enabled
       name: airflow
       repository: https://airflow.apache.org
       version: 1.7.0
-    - alias: Pg
-      condition: Pg.enabled
+    - alias: pg
+      condition: pg.enabled
       name: Postgres354
       repository: https://data354.github.io/Helmschart354/
       tags:
       - hiveConnector
       version: 0.1.0
-    - alias: Minio
-      condition: Minio.enabled
+    - alias: minio
+      condition: minio.enabled
       name: minio
       repository: https://charts.min.io/
       version: 5.0.1
-    - condition: Trino.enabled
+    - alias: trino
+      condition: trino.enabled
       name: Trino
       repository: https://data354.github.io/Helmschart354/Trino
       version: 0.1.0
     description: A Helm chart for Kubernetes
-    digest: eb19c9a5a1deb12a170169343590e4ef3150412e0348160d18328616f5820016
+    digest: 04dd06ec5e8636bb4ea008608ca7e7cb210fe592a804f009eaca3c1914ad388f
     maintainers:
     - name: Data354
       url: https://www.data354.com/
@@ -350,4 +351,4 @@ entries:
     urls:
     - https://data354.github.io/Helmschart354/Stack/modernstack-0.2.0.tgz
     version: 0.2.0
-generated: "2022-12-13T11:06:03.996971892Z"
+generated: "2022-12-15T17:00:24.384526444Z"
