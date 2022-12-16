@@ -213,7 +213,7 @@ entries:
           url: https://airflow.apache.org/docs/apache-airflow/2.4.1/_images/context.png
     apiVersion: v2
     appVersion: 2.4.1
-    created: "2022-12-16T09:52:21.817706613Z"
+    created: "2022-12-16T09:56:45.775978834Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -242,17 +242,17 @@ entries:
   datastack:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-12-16T09:52:21.808815079Z"
+    created: "2022-12-16T09:56:45.765918139Z"
     dependencies:
     - condition: airflow.enabled
       name: airflow
       repository: https://airflow.apache.org
       version: 1.7.0
     description: A Helm chart for Kubernetes
-    digest: 4fc9f12ce131fa9335de4ab4c110f7d6b5c9e113bf183f3e39b8f2f4973efbc6
+    digest: dfa9fa30c33733b88fd8da5cf73e3d92d7ff2a2f67cfe0c7a27e5236c0cc28f2
     name: datastack
     type: application
     urls:
     - https://data354.github.io/Helmschart354/datastack/datastack-0.1.0.tgz
     version: 0.1.0
-generated: "2022-12-16T09:52:21.794265324Z"
+generated: "2022-12-16T09:56:45.749463266Z"
