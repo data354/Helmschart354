@@ -3,38 +3,33 @@ entries:
   HiveMetastore:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-12-12T11:52:03.061870078Z"
-    dependencies:
-    - alias: pg
-      name: Postgres354
-      repository: https://data354.github.io/Helmschart354/
-      version: 0.1.0
+    created: "2022-12-21T09:37:37.806131426Z"
     description: A Helm chart for Kubernetes
-    digest: 11c6e417b3c7f83b22be0c9b763d5e1646b0d3b9ba0ce1b66d82afcf86851d70
+    digest: 020fee527a56101f03bffa413c8c4054fe23fb27aa1df8b84e659c4fc7b8bd4f
     maintainers:
     - name: Data354
       url: https://www.data354.com/
     name: HiveMetastore
     type: application
     urls:
-    - https://data354.github.io/Helmschart354/Trino/charts/HiveMetastore-0.1.0.tgz
-    version: 0.1.0
+    - https://data354.github.io/Helmschart354/Trino/charts/HiveMetastore-0.2.0.tgz
+    version: 0.2.0
   Trino:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-12-12T11:52:03.060615838Z"
+    created: "2022-12-21T09:37:37.805625031Z"
     dependencies:
     - alias: Hive
       name: HiveMetastore
       repository: https://data354.github.io/Helmschart354/HiveMetastore
       tags:
       - hiveConnector
-      version: 0.1.0
+      version: 0.2.0
     description: A Helm chart for Kubernetes
-    digest: 68ae856d4d3f38228e78387411b8c1c9b6d6f3e71db6d95300d4d82687d21030
+    digest: 2d6999796e995f1bac2007e9e6d14b2b80951a67ab91b51b7012d4e555ac1a9e
     name: Trino
     type: application
     urls:
     - https://data354.github.io/Helmschart354/Trino/Trino-0.1.0.tgz
     version: 0.1.0
-generated: "2022-12-12T11:52:03.057248082Z"
+generated: "2022-12-21T09:37:37.804073146Z"
