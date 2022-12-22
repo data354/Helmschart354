@@ -3,7 +3,7 @@ entries:
   HiveMetastore:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-12-21T09:37:37.806131426Z"
+    created: "2022-12-22T11:51:51.4110979Z"
     description: A Helm chart for Kubernetes
     digest: 020fee527a56101f03bffa413c8c4054fe23fb27aa1df8b84e659c4fc7b8bd4f
     maintainers:
@@ -17,7 +17,7 @@ entries:
   Trino:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-12-21T09:37:37.805625031Z"
+    created: "2022-12-22T11:51:51.410608182Z"
     dependencies:
     - alias: Hive
       name: HiveMetastore
@@ -26,10 +26,10 @@ entries:
       - hiveConnector
       version: 0.2.0
     description: A Helm chart for Kubernetes
-    digest: 2d6999796e995f1bac2007e9e6d14b2b80951a67ab91b51b7012d4e555ac1a9e
+    digest: 453f2339c92e4816aee581818a1c22ce2dd9e1c29e45c1e32ace011534c24357
     name: Trino
     type: application
     urls:
-    - https://data354.github.io/Helmschart354/Trino/Trino-0.1.0.tgz
-    version: 0.1.0
-generated: "2022-12-21T09:37:37.804073146Z"
+    - https://data354.github.io/Helmschart354/Trino/Trino-0.2.0.tgz
+    version: 0.2.0
+generated: "2022-12-22T11:51:51.409088223Z"
