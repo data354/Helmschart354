@@ -1,7 +1,8 @@
 # Helmschart354
 - Version 
-     - Numero : 0.1.0
-     - Content : Postgresql + airflow + Spark(mode cluster) + Minio + HiveMetastore + Trino
+     - Name: modernstack
+     - Number : 1.0.0
+     - Content : Postgresql + airflow + Spark(mode cluster) + Minio + HiveMetastore + Trino 
      - URL : https://data354.github.io/Helmschart354/Stack/
 
 - PORTS MAPPING 
