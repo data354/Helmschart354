@@ -3,7 +3,7 @@ entries:
   Postgres354:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-03-08T17:55:44.735962287Z"
+    created: "2023-03-13T14:58:15.605422325Z"
     description: A Helm chart for Kubernetes
     digest: bec632cbeb448c2343d93068fa8290edf8f59d5a5c42926184dcd6a687684d1a
     name: Postgres354
@@ -24,7 +24,7 @@ entries:
   Trino:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-03-08T17:55:44.73782556Z"
+    created: "2023-03-13T14:58:15.607758036Z"
     dependencies:
     - alias: Hive
       name: HiveMetastore
@@ -269,7 +269,7 @@ entries:
           url: https://airflow.apache.org/docs/apache-airflow/2.4.1/_images/context.png
     apiVersion: v2
     appVersion: 2.4.1
-    created: "2023-03-08T17:55:44.748246923Z"
+    created: "2023-03-13T14:58:15.61786837Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -298,7 +298,7 @@ entries:
   minio:
   - apiVersion: v1
     appVersion: RELEASE.2022-11-11T03-44-20Z
-    created: "2023-03-08T17:55:44.749752832Z"
+    created: "2023-03-13T14:58:15.619345205Z"
     description: Multi-Cloud Object Storage
     digest: 3e952c5d737980b8ccdfb819021eafb4b4e8da226f764a1dc3de1ba63ceb1ffa
     home: https://min.io
@@ -321,7 +321,7 @@ entries:
   modernstack:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-03-08T17:55:44.735499575Z"
+    created: "2023-03-13T14:58:15.604871667Z"
     dependencies:
     - alias: pg
       condition: pg.enabled
@@ -342,19 +342,24 @@ entries:
       name: Trino
       repository: https://data354.github.io/Helmschart354/Trino
       version: 0.2.0
+    - alias: sparkhs
+      condition: sparkhs.enabled
+      name: sparkhistory
+      repository: https://data354.github.io/Helmschart354/sparkhistoryserver
+      version: 0.1.0
     description: A Helm chart for Kubernetes
-    digest: d60c7d20a6d34f037ed0aebec0b5f12bdb4d346958129aaa4cf8ad088504c55e
+    digest: 48afd1c013fe6238b5554a23f9fe7c73920e693ee817bdfafcec746b6d45c0d7
     maintainers:
     - name: Data354
       url: https://www.data354.com/
     name: modernstack
     type: application
     urls:
-    - https://data354.github.io/Helmschart354/datastack/modernstack-1.1.0.tgz
-    version: 1.1.0
+    - https://data354.github.io/Helmschart354/datastack/modernstack-3.0.0.tgz
+    version: 3.0.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-03-08T17:55:44.713585093Z"
+    created: "2023-02-17T15:25:59.9912871Z"
     dependencies:
     - alias: pg
       condition: pg.enabled
@@ -376,7 +381,7 @@ entries:
       repository: https://data354.github.io/Helmschart354/Trino
       version: 0.2.0
     description: A Helm chart for Kubernetes
-    digest: ccab758958c7f5d6cfe7c6f593420265ceec42636c26ac454c4a991b398322a9
+    digest: 2a3eaae1fdb8c965ff5d8c8987959f4c7ca1fd746116322654a10a2afe0228f0
     maintainers:
     - name: Data354
       url: https://www.data354.com/
@@ -420,4 +425,15 @@ entries:
     urls:
     - https://data354.github.io/Helmschart354/datastack/modernstack-0.1.0.tgz
     version: 0.1.0
-generated: "2023-03-08T17:55:44.691053682Z"
+  sparkhistory:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-03-13T14:58:15.619666377Z"
+    description: A Helm chart for Kubernetes
+    digest: 117405cc8af503a6335348ba330d74f710467b7eec152915f023f59e0aa32cca
+    name: sparkhistory
+    type: application
+    urls:
+    - https://data354.github.io/Helmschart354/datastack/charts/sparkhistory-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-03-13T14:58:15.579896116Z"
