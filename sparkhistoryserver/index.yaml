@@ -3,32 +3,12 @@ entries:
   sparkhistory:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-03-08T12:10:03.020036416Z"
+    created: "2023-03-13T10:57:33.774854933Z"
     description: A Helm chart for Kubernetes
-    digest: cb9e1bd78eb39a877a236d730d32ac15377e08f9d4d6a421b023331a8921819d
-    name: sparkhistory
-    type: application
-    urls:
-    - https://data354.github.io/Helmschart354/sparkhistoryserver/sparkhistory-0.3.0.tgz
-    version: 0.3.0
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2023-03-08T12:00:08.966554654Z"
-    description: A Helm chart for Kubernetes
-    digest: 149296fedab885729f608dc09d70765ca7b24265e467783f5f500b1d82c47fd8
-    name: sparkhistory
-    type: application
-    urls:
-    - https://data354.github.io/Helmschart354/sparkhistoryserver/sparkhistory-0.2.0.tgz
-    version: 0.2.0
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2023-03-08T11:01:01.709731936Z"
-    description: A Helm chart for Kubernetes
-    digest: 370755f794edcf33e5e03bda1dee2695c9e735a2eaf071bb287d59bc45ab4c28
+    digest: f128e8da70ab2a1602b8be31da1e35f3ba62b43697c823f17c87f104088a7bc7
     name: sparkhistory
     type: application
     urls:
     - https://data354.github.io/Helmschart354/sparkhistoryserver/sparkhistory-0.1.0.tgz
     version: 0.1.0
-generated: "2023-03-08T12:10:03.019511131Z"
+generated: "2023-03-13T10:57:33.774168279Z"
