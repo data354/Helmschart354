@@ -3,7 +3,7 @@ entries:
   Postgres354:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-03-13T14:58:15.605422325Z"
+    created: "2023-03-13T15:23:18.496032314Z"
     description: A Helm chart for Kubernetes
     digest: bec632cbeb448c2343d93068fa8290edf8f59d5a5c42926184dcd6a687684d1a
     name: Postgres354
@@ -24,7 +24,7 @@ entries:
   Trino:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-03-13T14:58:15.607758036Z"
+    created: "2023-03-13T15:23:18.497858122Z"
     dependencies:
     - alias: Hive
       name: HiveMetastore
@@ -269,7 +269,7 @@ entries:
           url: https://airflow.apache.org/docs/apache-airflow/2.4.1/_images/context.png
     apiVersion: v2
     appVersion: 2.4.1
-    created: "2023-03-13T14:58:15.61786837Z"
+    created: "2023-03-13T15:23:18.50761534Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -298,7 +298,7 @@ entries:
   minio:
   - apiVersion: v1
     appVersion: RELEASE.2022-11-11T03-44-20Z
-    created: "2023-03-13T14:58:15.619345205Z"
+    created: "2023-03-13T15:23:18.510185963Z"
     description: Multi-Cloud Object Storage
     digest: 3e952c5d737980b8ccdfb819021eafb4b4e8da226f764a1dc3de1ba63ceb1ffa
     home: https://min.io
@@ -321,7 +321,7 @@ entries:
   modernstack:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-03-13T14:58:15.604871667Z"
+    created: "2023-03-13T15:23:18.495567714Z"
     dependencies:
     - alias: pg
       condition: pg.enabled
@@ -348,7 +348,7 @@ entries:
       repository: https://data354.github.io/Helmschart354/sparkhistoryserver
       version: 0.1.0
     description: A Helm chart for Kubernetes
-    digest: 48afd1c013fe6238b5554a23f9fe7c73920e693ee817bdfafcec746b6d45c0d7
+    digest: becf5b0b72549e3b6309a1fd39c580f4f605e9006c0735bf10ab59692af1feb7
     maintainers:
     - name: Data354
       url: https://www.data354.com/
@@ -428,7 +428,7 @@ entries:
   sparkhistory:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-03-13T14:58:15.619666377Z"
+    created: "2023-03-13T15:23:18.510532802Z"
     description: A Helm chart for Kubernetes
     digest: 117405cc8af503a6335348ba330d74f710467b7eec152915f023f59e0aa32cca
     name: sparkhistory
@@ -436,4 +436,4 @@ entries:
     urls:
     - https://data354.github.io/Helmschart354/datastack/charts/sparkhistory-0.1.0.tgz
     version: 0.1.0
-generated: "2023-03-13T14:58:15.579896116Z"
+generated: "2023-03-13T15:23:18.472266602Z"
