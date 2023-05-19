@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  Hue:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-05-19T15:25:47.372387225Z"
+    description: A Helm chart for Kubernetes
+    digest: 0925355f95e9fe86648cdf5ac6bc3f4ed9a8ce1226b8053f6fdb955ee42dbc92
+    name: Hue
+    type: application
+    urls:
+    - https://data354.github.io/Helmschart354/Hue/Hue-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-05-19T15:25:47.371538587Z"
